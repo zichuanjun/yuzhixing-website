@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="description" content="宇智行 · AI 产品变革探索者。智行合一，数创未来。" />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <title>宇智行 · 智行合一，数创未来</title>
+
+    <!-- 主题防闪白：首帧前确定 data-theme（interaction-plan P1-6） -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('yx-theme');
+          if (!t) t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
+
+    <!-- 生产字体：display=swap + 系统回退栈（design-spec §2.3） -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="./assets/index-BOjV8UYe.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DGgZAOeD.css">
+  </head>
+  <body id="top">
+    <div id="root"></div>
+  </body>
+</html>
